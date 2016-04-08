@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'hike-rater-ember',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://project4816.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
