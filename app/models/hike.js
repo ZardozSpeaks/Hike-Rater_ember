@@ -5,5 +5,6 @@ export default DS.Model.extend({
   location: DS.attr(),
   distance: DS.attr(),
   difficulty: DS.attr(),
-  reviews: DS.hasMany('review')
+  dateAdded: DS.attr(),
+  reviews: DS.hasMany('review', {async: true})
 });

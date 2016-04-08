@@ -5,6 +5,7 @@
     <label for="location">Location:</label>{{input value=location id='location'}}<br>
     <label for="distance">Distance:</label>{{input value=distance id='distance'}}<br>
     <label for="difficulty">Difficulty:</label>{{input value=difficulty id='difficulty'}}<br>
-    <button {{action='saveHike'}}>Save</button>
+    {{input type="hidden" value="{{date-helper}}" id=dateAdded}}
+    <button {{action 'saveHike'}}>Save</button>
   </form>
 </div>
