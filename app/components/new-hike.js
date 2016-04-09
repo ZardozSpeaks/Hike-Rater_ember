@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   actions: {
@@ -8,13 +9,15 @@ export default Ember.Component.extend({
         location: this.get('location'),
         distance: this.get('distance'),
         difficulty: this.get('difficulty'),
-        dateAdded: this.get('dateAdded')
+        image: this.get('image'),
+        timestamp: this.set('timestamp', moment().format('LL'))
       };
       this.sendAction('saveHike', params);
       this.set('name', '');
       this.set('location', '');
       this.set('distance', '');
       this.set('difficulty', '');
+      this.set('image', '');
     }
   }
 });
