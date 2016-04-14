@@ -2,9 +2,6 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Component.extend({
-  fullLocation: Ember.computed('location', 'state', function() {
-    return this.get('location') , this.get('state');
-  }),
   actions: {
     saveHike() {
       var params = {

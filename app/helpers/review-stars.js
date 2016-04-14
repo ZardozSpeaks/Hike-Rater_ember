@@ -1,16 +1,14 @@
 import Ember from 'ember';
 
-export function reviewStars(rating) {
-  var stars = "";
-  var i = 0;
-  if(rating) {
-    var parsed = parseInt(rating);
-    var star = "{{fa-icon fa-star}}";
-    for (i=0; i<parsed; i++) {
-      stars.concat(star);
-    }
+export function reviewStars(params) {
+  console.log(params[0]);
+  let review = parseInt(params[0]),
+      stars="",
+      i = 0;
+  for (i=0; i<review; i++) {
+    stars.concat("{{fa-icon fa-star}}");
   }
-  console.log(rating);
+  console.log(stars);
   return Ember.String.htmlSafe(stars);
 }
 

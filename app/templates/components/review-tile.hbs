@@ -3,7 +3,7 @@
   <h4>Hiker Reviews</h4>
   <div class="review-field">
     {{#each hike.reviews as |review|}}
-      <p><span>{{review.username}}{{review-stars review=review.rating}}</span><br>{{review.comment}}</p>
+      <p><span>{{review.username}}{{review-stars review.rating}}</span><br>{{review.comment}}</p>
       {{#if admin}}
       <p>admin working</p>
       <!-- <button {{action 'deleteAnswer' answer}}>Delete</button> -->
