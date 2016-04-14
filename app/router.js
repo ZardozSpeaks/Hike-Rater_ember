@@ -9,6 +9,8 @@ Router.map(function() {
   this.route('new');
   this.route('hike', {path: 'hike/:hike_id'});
   this.route('admin');
+  this.route('sign-up');
+  this.route('sign-in');
 });
 
 export default Router;

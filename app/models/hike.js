@@ -4,7 +4,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   location: DS.attr(),
   state: DS.attr(),
-  fullLocation: DS.attr(),
   distance: DS.attr(),
   difficulty: DS.attr(),
   image: DS.attr(),
